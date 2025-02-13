@@ -48,6 +48,7 @@ python training/train.py
 python inference/run_fpga_inference.py
 ```
 
+### If you don't have a physical FPGA board
 ```bash
 ssh <your_username>@devcloud.intel.com
 scp -r fpganet_fpga <your_username>@devcloud.intel.com:~/fpga_models/
