@@ -16,23 +16,22 @@ The model was trained in **PyTorch**, converted to **ONNX**, optimized using **O
 
 ## 📌 Project Structure  
 ### FPGA-DeepLearning
-│── models/                  # Contains PyTorch, ONNX, and OpenVINO models
-│   ├── fpganet.py           # Trained PyTorch model
-│   ├── fpganet.onnx         # ONNX format
-│   ├── fpganet.xml          # OpenVINO IR format
-│   ├── fpganet.bin          # OpenVINO binary model
-│   ├── init.py              # Initiliazer for importing modules
-│── training/                # Training and dataset scripts
-│   ├── train.py             # PyTorch training script
-│   
-│
-│── conversion/              # Model conversion scripts
-│   ├── optimize_fpga.py     # Converts ONNX to OpenVINO IR
-│
-│── inference/               # Inference and testing scripts
-│   ├── run_fpga_inference.py # Runs inference on Intel FPGA
-│   ├── test.py              # Tests on local images
-│  
+
+ models/                  # Contains PyTorch, ONNX, and OpenVINO models
+    fpganet.py           # Trained PyTorch model
+    fpganet.onnx         # ONNX format
+    fpganet.xml          # OpenVINO IR format
+    fpganet.bin          # OpenVINO binary model
+    init.py              # Initiliazer for importing modules
+training/                # Training and dataset scripts
+    train.py             # PyTorch training script
+
+conversion/              # Model conversion scripts
+   optimize_fpga.py     # Converts ONNX to OpenVINO IR
+
+inference/               # Inference and testing scripts
+   run_fpga_inference.py # Runs inference on Intel FPGA
+   test.py              # Tests on local images  
 
 ## 🚀 How to Run the Project  
 ### Clone the repository  
@@ -43,7 +42,7 @@ pip install -r requirements.txt
 python training/train.py
 python inference/run_fpga_inference.py
 
-## If you don't have a physical FPGA
+-- if you don't have a physical FPGA
 ssh <your_username>@devcloud.intel.com
 scp -r fpganet_fpga <your_username>@devcloud.intel.com:~/fpga_models/
 scp inference/test_image.jpg <your_username>@devcloud.intel.com:~/fpga_images/
