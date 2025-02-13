@@ -14,8 +14,8 @@ The model was trained in **PyTorch**, converted to **ONNX**, optimized using **O
 - **95.6% accuracy on CIFAR-10 dataset** after FPGA deployment.  
 - **Successfully deployed optimized model on Intel DevCloud FPGA.**  
 
-### 📌 Project Structure  
-FPGA-DeepLearning
+## 📌 Project Structure  
+### FPGA-DeepLearning
 │── models/                  # Contains PyTorch, ONNX, and OpenVINO models
 │   ├── fpganet.py           # Trained PyTorch model
 │   ├── fpganet.onnx         # ONNX format
