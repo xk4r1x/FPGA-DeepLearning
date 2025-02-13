@@ -32,9 +32,10 @@ conversion/              # Model conversion scripts
 inference/               # Inference and testing scripts
    run_fpga_inference.py # Runs inference on Intel FPGA
    test.py              # Tests on local images  
+```
 
 ## 🚀 How to Run the Project  
-### Clone the repository  
+### Clone the repository
 ```bash
 git clone https://github.com/xk4r1x/FPGA-DeepLearning.git
 cd FPGA-DeepLearning
