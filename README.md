@@ -56,7 +56,7 @@ scp inference/test_image.jpg <your_username>@devcloud.intel.com:~/fpga_images/
 source /opt/intel/openvino/setupvars.sh
 python3 -c "import openvino.runtime; print('✅ OpenVINO is ready!')"
 python3 inference/run_fpga_inference.py
-
+```
 
 
 
