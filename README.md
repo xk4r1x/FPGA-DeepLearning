@@ -38,12 +38,17 @@ inference/               # Inference and testing scripts
 ### Clone the repository
 ```bash
 git clone https://github.com/xk4r1x/FPGA-DeepLearning.git
+```
+```bash
 cd FPGA-DeepLearning
+```
+```bash
 pip install -r requirements.txt
 python training/train.py
 python inference/run_fpga_inference.py
+```
 
--- if you don't have a physical FPGA
+```bash
 ssh <your_username>@devcloud.intel.com
 scp -r fpganet_fpga <your_username>@devcloud.intel.com:~/fpga_models/
 scp inference/test_image.jpg <your_username>@devcloud.intel.com:~/fpga_images/
