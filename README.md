@@ -16,8 +16,8 @@ The model was trained in **PyTorch**, converted to **ONNX**, optimized using **O
 
 ## 📌 Project Structure  
 ### FPGA-DeepLearning
-
- models/                  # Contains PyTorch, ONNX, and OpenVINO models
+ ```bash
+models/                  # Contains PyTorch, ONNX, and OpenVINO models
     fpganet.py           # Trained PyTorch model
     fpganet.onnx         # ONNX format
     fpganet.xml          # OpenVINO IR format
